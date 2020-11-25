@@ -1,0 +1,32 @@
+package com.learning.hibernate.driver;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.learning.hibernate.model.Student;
+
+public class StudentDriver {
+
+	public static void main(String[] args) {
+		
+		Configuration config = new Configuration();
+		config.configure();
+		
+		SessionFactory sessionFactory = config.buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		
+		Transaction tx = session.beginTransaction();
+	//	Student student = new Student(102,"riya","riya@123","riya@niit.com","12344567","female","Delhi");
+	//	session.save(student);    
+        
+	    Student std = session.get(Student.class,102);
+		System.out.println(std);
+        
+        tx.commit();
+		session.close();
+
+	}
+
+}

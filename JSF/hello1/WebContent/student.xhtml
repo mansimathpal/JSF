@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>JSF Sample Application</title>
+</h:head>
+
+<h:body>
+
+	<h:form>
+	Uasername : <h:inputText id="username" value="#{student.username}" />
+		<br />
+		<br />
+      Password: <h:inputSecret id="password" value="#{student.password}" />
+		<br />
+		<br />
+	Email: <h:inputText id="email" value="#{student.email}" />
+		<br />
+		<br />
+		
+	Phone: <h:inputText id="phone" value="#{student.phone}" />
+		<br />
+		<br />
+		<h:outputLabel for="gender" value="Gender: " />
+		<h:selectOneRadio id="gender" value="#{student.gender}">
+			<f:selectItem itemLabel="Male" itemValue="Male" />
+			<f:selectItem itemLabel="Female" itemValue="Female" />
+		</h:selectOneRadio>
+
+		<br />
+		<br />
+		Technical Languages:
+		<h:selectManyCheckbox id="language" value="#{student.languages}">
+			<f:selectItem itemLabel="C" itemValue="C" />
+			<f:selectItem itemLabel="Java" itemValue="Java" />
+			<f:selectItem itemLabel="Python" itemValue="Python" />
+			<f:selectItem itemLabel="Angular" itemValue="Angular" />
+			<f:selectItem itemLabel="React" itemValue="React" />
+			<f:selectItem itemLabel="Node" itemValue="Node" />
+			<f:selectItem itemLabel="Spring" itemValue="Spring" />
+
+		</h:selectManyCheckbox>
+		<br />
+		<br />
+		Course:  <h:selectOneMenu id="course" value="#{student.course}">
+
+			<f:selectItem itemLabel="GNIIT" itemValue="gniit" />
+			<f:selectItem itemLabel="PGP Java" itemValue="pgp" />
+			<f:selectItem itemLabel="Banking and Finance" itemValue="bnf" />
+			<f:selectItem itemLabel="New career Series" itemValue="ncs" />
+			
+
+		</h:selectOneMenu>
+		<br />
+		<br />
+		<h:commandButton value="Register" action="student_response" />
+
+
+
+	</h:form>
+
+</h:body>
+
+
+</html>

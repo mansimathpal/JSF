@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12 Jul, 2020 4:55:07 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.learning.Student" table="student">
+        <id name="bookId" type="integer">
+            <column name="BookID" />
+            <generator class="assigned" />
+        </id>
+        <property name="StudentId" type="integer">
+            <column name="StudentId" />
+        </property>
+        <property name="bookName" type="java.lang.String">
+            <column name="BookName" />
+        </property>
+        <property name="studentName" type="java.lang.String">
+            <column name="StudentName" />
+        </property>
+        <property name="issueDate" type="java.lang.String">
+            <column name="IssueDate" />
+        </property>
+        <property name="returnDate" type="java.lang.String">
+            <column name="ReturnDate" />
+        </property>
+    </class>
+</hibernate-mapping>

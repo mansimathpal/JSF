@@ -1,0 +1,12 @@
+127.0.0.1 - - [22/May/2020:12:42:34 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [22/May/2020:12:42:37 +0530] "GET /hello/faces/index.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [22/May/2020:12:43:56 +0530] "GET /hello/faces/index.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [22/May/2020:12:44:02 +0530] "GET /hello/faces/index.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [22/May/2020:12:44:03 +0530] "GET /hello/faces/index.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [22/May/2020:12:47:59 +0530] "GET /hello/faces/index.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [22/May/2020:12:48:14 +0530] "GET /hello/faces/index.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [22/May/2020:12:48:15 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [22/May/2020:12:49:39 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [22/May/2020:12:49:48 +0530] "GET /hello/faces/index.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [22/May/2020:12:52:17 +0530] "GET /hello/faces/index.xhtml HTTP/1.1" 200 1138
+0:0:0:0:0:0:0:1 - - [22/May/2020:12:52:34 +0530] "POST /hello/faces/index.xhtml;jsessionid=BB01D713AF853FDCC702431CAA922520 HTTP/1.1" 200 231

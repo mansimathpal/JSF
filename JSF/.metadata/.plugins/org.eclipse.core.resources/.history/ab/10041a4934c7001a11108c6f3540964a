@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:c="http://xmlns.jcp.org/jsf/core"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+<title>Author Information</title>
+<style>
+	table, tr{
+	border: 1px solid white;
+	}
+</style>
+</h:head>
+<h:body>
+	<table border="0" bgcolor="#808080" width="100%" style="position: relative; height: 100px">
+	<tr>
+	<td bgcolor="#000080" align="center">
+	<p style="font-size: 38pt; color: #ffffff; font-family: Arial Rounded MT Bold" >Author Information</p> 
+	</td>
+    </tr>
+	</table>
+	<table bgcolor="white" border="1" width="100%" style="height: 470px">
+	<tr>
+    <td width="85%" valign="top" bgcolor="white">
+	<p style="color: darkblue; font-size: 20pt" align="center"><b>Author Information</b><br/></p>
+	<table bgcolor="black" cellpadding="20px" border="1" align="center" style="height: 120px">
+	<tr>
+	<td bgcolor="white">
+	<table border="0" width="100%" bgcolor="white" align="center" style="height: 100px">
+	<h:form>
+	<tr>
+	<td>Author Name:</td>
+	<td><h:inputText value="#{AuthorInformation.firstName}" id="aName" required="true" requiredMessage="You must enter the first name"/>
+	<h:message for="aName" style="color:red" />
+	</td>
+	</tr>
+	<tr>
+	<td>Author Id:</td>
+	<td><h:inputText value="#{AuthorInformation.authorId}" id="authorId" required="true" requiredMessage="You must enter the last name" 
+	validatorMessage="atleast 6 characters"/>
+	<h:message for="authorId" style="color:red" />
+	</td>
+	</tr>
+	<tr>
+	<td>Select Gender:</td>
+	<td><h:selectOneRadio value="#{AuthorInformation.gender}" id="gender" required="true" requiredMessage="You must select the gender" >
+	<f:selectItem itemValue="m" itemLabel="Male"></f:selectItem>
+	<f:selectItem itemValue="f" itemLabel="Female"></f:selectItem>
+	</h:selectOneRadio>
+	<h:message for="gender" style="color:red" />
+	</td>
+	</tr>
+	<tr>
+	<td>Date of birth:</td>
+	<td><h:inputText id="dob" value="#{AuthorInformation.dateofBirth}" converterMessage="Enter DOB in dd/mm/yyyy format" 
+	required="true" requiredMessage="You must enter date of birth">
+	<f:convertDateTime pattern="dd/mm/yyyy" type="date"/>
+	</h:inputText>
+	<h:message for="dob" style="color :red" />
+	</td>
+	</tr>
+	<tr>
+	<td>Address:</td>
+	<td><h:inputTextarea rows="3" value="#{AuthorInformation.address}" id="add" required="true" requiredMessage="You must enter address" />
+	<h:message for="add" style="color:red" />
+	</td>
+	</tr>
+	<tr>
+	<td>Contact Number:</td>
+	<td><h:inputText value="#{AuthorInformation.contactNumber}" id="ph" required="true">
+	<c:validateRegex pattern="77-7777777" />
+	</h:inputText>
+	<h:message for="ph" style="color:red" />
+	</td>
+	</tr>
+	<tr>
+	<td>E-mail Id:</td>
+	<td><h:inputText value="#{AuthorInformation.emailId}" id="email" required="true" requiredMessage="you must enter e-mail Id"
+	 validatorMessage="username@serviceprovider.domainname" />
+	<h:message for="email" style="color:red" />
+	</td>
+	</tr>
+	<tr>
+	<td>Nationality:</td>
+	<td><h:inputText  value="#{AuthorInformation.nationality}" id="nation" required="true" requiredMessage="You must enter user Id">
+	</h:inputText>
+	<h:message for="uid" style="color:red" />
+	</td>
+	</tr>
+
+	<tr>
+	<td align="right"><br/>
+	<h:commandButton value="Submit" action="Success" />
+	</td>
+	<td align="left"><br/>
+	<h:commandButton value="Reset" immediate="true" action="Author"/>
+	</td>
+	</tr>
+	</h:form>
+	</table>
+	</td>
+	</tr>
+	</table>
+	</td>
+	
+	</tr>
+	</table>
+</h:body>
+</html>

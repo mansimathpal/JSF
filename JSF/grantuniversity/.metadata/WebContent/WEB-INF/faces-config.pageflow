@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15921394439380" configfile="/grantuniversity/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" id="pf15921397602121" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15921397602142 pf15921397602143" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="StudentProfile.xhtml" id="pf15921397602144" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15921397602142" path="StudentProfile.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="LoginError.xhtml" id="pf15921397602155" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf15921397602143" path="LoginError.xhtml"/>
+  <links id="pf15921397602142" target="pf15921397602144" source="pf15921397602121" outcome="student" fromaction="#{bean.Action}"/>
+  <links id="pf15921397602143" target="pf15921397602155" source="pf15921397602121" outcome="error" fromaction="#{bean.Action}"/>
+</pageflow:Pageflow>

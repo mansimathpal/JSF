@@ -1,0 +1,19 @@
+package com.learning.hibernate.driver;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.learning.hibernate.config.HibernateUtil;
+import com.learning.hibernate.model.Passport;
+
+
+public class PassportDriver {
+
+	public static void main(String[] args) {
+		
+
+		
+	}
+
+}

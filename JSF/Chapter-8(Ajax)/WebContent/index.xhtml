@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+</h:head>
+<h:body>
+
+	<center><h2>Registration of Users</h2></center>
+	<h:form>
+   First Name: <h:inputText id="firstName" value="#{firstName}" />
+        <br />
+		<br />
+   Last Name: <h:inputText id="lastName" value="#{lastName}" />
+        <br />
+        <br />
+        <h:outputLabel for="gender" value="Gender: " />
+		<h:selectOneRadio id="gender" value="#{gender}">
+			<f:selectItem itemLabel="Male" itemValue="Male" />
+			<f:selectItem itemLabel="Female" itemValue="Female" />
+		</h:selectOneRadio>
+		<br />
+		<br />
+	Date of Birth: <h:inputText id="DateofBirth" value="#{DateofBirth}" />
+        <br />
+		<br />
+   Address: <h:inputText id="address" value="#{address}" />
+	    <br />
+	    <br />
+   Contact Number: <h:inputText id="contactNumber" value="#{contactNumber}" />
+	    <br />
+	    <br />
+   Email Id: <h:inputText id="emailId" value="#{emailId}" />
+        <br />
+        <br />
+   Password: <h:inputSecret id="password" value="#{password}" />
+		<br />
+		<br />
+            <h:commandButton value="Submit" action="welcome" />
+            <br />
+            <br />
+            <h:commandButton value="Reset" type ="reset" action="index" />
+</h:form>
+</h:body>
+</html>

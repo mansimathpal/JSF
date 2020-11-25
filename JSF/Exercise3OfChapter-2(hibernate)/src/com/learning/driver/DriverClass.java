@@ -1,0 +1,24 @@
+package com.learning.driver;
+
+import com.learning.Books;
+import com.learning.util.BookUtil;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class DriverClass {
+    public static void main(String[] args){
+        SessionFactory sessionFactory = BookUtil.getSessionFactory();
+        Session session = sessionFactory.openSession();
+        Transaction tx =  session.beginTransaction();
+        
+       Books book = new Books(102, "Origin of Species", "Ram Narayan", 10, "Science", "Pearson", 2011, 1000, 3) ;    
+       session.save(book);
+        
+        tx.commit();
+        session.close();
+        
+    }
+}
+    

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="employee" class="com.learning.Employee">
+    <property name="id" value="19991"></property>
+    <property name="name" value="Himanshu"></property>
+    <property name="address" value="New Delhi"></property>
+    <property name="email" value="himanshu@niit.com"></property>
+    </bean>
+    
+</beans>

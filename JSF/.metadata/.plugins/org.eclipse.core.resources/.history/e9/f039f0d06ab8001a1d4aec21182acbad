@@ -1,0 +1,12 @@
+package com.learning.hibernate.driver;
+
+
+
+public class PassportDriver {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

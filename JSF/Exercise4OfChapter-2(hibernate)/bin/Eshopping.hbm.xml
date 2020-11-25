@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14 Jul, 2020 4:30:41 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.learning.Eshopping" table="checkout">
+        <id name="FirstName" type="java.lang.String">
+            <column name="FIRSTNAME" />
+            <generator class="assigned" />
+        </id>
+        <property name="LastName" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="DeliveryAddress" type="java.lang.String">
+            <column name="DELIVERYADDRESS" />
+        </property>
+        <property name="OfferCode" type="int">
+            <column name="OFFERCODE" />
+        </property>
+        <property name="ContactNumber" type="int">
+            <column name="CONTACTNUMBER" />
+        </property>
+        <property name="Comments" type="java.lang.String">
+            <column name="COMMENTS" />
+        </property>
+        <property name="PaymentMode" type="java.lang.String">
+            <column name="PAYMENTMODE" />
+        </property>
+    </class>
+</hibernate-mapping>

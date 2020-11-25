@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="order" class="com.learning.Order">
+    <property name="orderId" value="122526"></property>
+    <property name="address" value="New Delhi"></property>
+    <property name="payment" value="credit card/debitcard/cash on delivery"></property>
+    <property name="email" value="rahul123@gmail.com"></property>
+    </bean>
+    
+    <bean id="product" class="com.learning.Product">
+    <property name="productId" value="463373"></property>
+    <property name="productCost" value="1200"></property>
+    <property name="productName" value="Sandals"></property>
+    <property name="productQuantity" value="2"></property>
+    </bean>
+    
+    <bean id="customer" class="com.learning.Customer">
+    <property name="name" value="rohit"></property>
+    <property name="address" value="Gurgaon"></property>
+    <property name="email" value="rohit1234@gmail.com"></property>
+    <property name="id" value="31452227"></property>
+    <property name="feedback" value="quality is not good"></property>
+    </bean>
+
+</beans>

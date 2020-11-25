@@ -1,0 +1,7 @@
+127.0.0.1 - - [23/May/2020:17:30:33 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [23/May/2020:17:30:38 +0530] "GET /sample-jsf/faces/mansi.xhtml HTTP/1.1" 200 1718
+0:0:0:0:0:0:0:1 - - [23/May/2020:17:31:05 +0530] "POST /sample-jsf/faces/mansi.xhtml;jsessionid=DD5DF7174B41511227A8525876BCA024 HTTP/1.1" 200 334
+0:0:0:0:0:0:0:1 - - [23/May/2020:17:43:25 +0530] "GET /sample-jsf/faces/mansi.xhtml HTTP/1.1" 200 2833
+0:0:0:0:0:0:0:1 - - [23/May/2020:17:43:56 +0530] "POST /sample-jsf/faces/mansi.xhtml;jsessionid=1F86F42EB0688B4D8850B32A51E937F3 HTTP/1.1" 200 445
+0:0:0:0:0:0:0:1 - - [23/May/2020:17:52:56 +0530] "GET /sample-jsf/faces/mansi.xhtml HTTP/1.1" 200 3151
+0:0:0:0:0:0:0:1 - - [23/May/2020:17:53:39 +0530] "POST /sample-jsf/faces/mansi.xhtml;jsessionid=4EE36C9FFE54CA0BD2B27DA8804CD9B8 HTTP/1.1" 200 482

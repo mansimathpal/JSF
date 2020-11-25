@@ -1,0 +1,8 @@
+package com.learning.hibernate.model;
+
+public class Passport {
+	private int id;
+	private String authority;
+	private String PassportNumber;
+
+}

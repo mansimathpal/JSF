@@ -1,0 +1,13 @@
+package com.learning;
+import java.util.Date;
+import javax.faces.application.FacesMessage;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped; 
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.validator.ValidatorException;
+@ManagedBean
+@RequestScoped
+public class RegistrationBean {
+
+}

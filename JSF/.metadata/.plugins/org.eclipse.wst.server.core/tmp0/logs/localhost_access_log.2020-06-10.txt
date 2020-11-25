@@ -1,0 +1,4 @@
+127.0.0.1 - - [10/Jun/2020:17:06:20 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [10/Jun/2020:17:06:24 +0530] "GET /grantuniversity/faces/index.xhtml HTTP/1.1" 500 4808
+0:0:0:0:0:0:0:1 - - [10/Jun/2020:17:08:23 +0530] "GET /grantuniversity/faces/index.xhtml HTTP/1.1" 500 4808
+0:0:0:0:0:0:0:1 - - [10/Jun/2020:17:08:24 +0530] "GET /favicon.ico HTTP/1.1" 404 762

@@ -1,0 +1,8 @@
+127.0.0.1 - - [19/May/2020:16:21:12 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [19/May/2020:16:21:17 +0530] "GET /mansi/NewFile.jsp HTTP/1.1" 200 151
+127.0.0.1 - - [19/May/2020:17:36:40 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [19/May/2020:17:36:43 +0530] "GET /hello-jsf/faces/index.xhtml HTTP/1.1" 200 594
+0:0:0:0:0:0:0:1 - - [19/May/2020:17:37:03 +0530] "GET /hello-jsf/faces/index.xhtml HTTP/1.1" 200 594
+0:0:0:0:0:0:0:1 - - [19/May/2020:17:37:03 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [19/May/2020:17:43:49 +0530] "GET /hello-jsf/faces/index.xhtml HTTP/1.1" 200 632
+0:0:0:0:0:0:0:1 - - [19/May/2020:17:43:55 +0530] "POST /hello-jsf/faces/index.xhtml HTTP/1.1" 200 169

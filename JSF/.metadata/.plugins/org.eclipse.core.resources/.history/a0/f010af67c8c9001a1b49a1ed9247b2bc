@@ -1,0 +1,78 @@
+package com.learning;
+import java.util.Date;
+import javax.faces.application.FacesMessage;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped; 
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.validator.ValidatorException;
+@ManagedBean
+@RequestScoped
+
+public class RegistrationBean {
+    private String firstName;
+    private String lastName;
+    private String gender;
+    private String address;
+    private String emailID;
+    private Date dateOfBirth;
+    private String password;
+    private String contactNumber;
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getEmailID() {
+		return emailID;
+	}
+	public void setEmailID(String emailID) {
+		this.emailID = emailID;
+	}
+	public Date getDateOfBirth() {
+		return dateOfBirth;
+	}
+	public void setDateOfBirth(Date dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getContactNumber() {
+		return contactNumber;
+	}
+	public void setContactNumber(String contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+	public void validateName(FacesContext fc, UIComponent c, Object value)
+	{
+		if(
+	((String)value).contains("!")||((String)value).contains("@")||((String)value)
+	.contains("#")||((String)value).contains("$")||((String)value).contains("$")||
+	((String)value).contains("&")||((String)value).contains("*"))throw new
+     ValidatorException (
+	   new FacesMessage("Name cannot contain special characters"));
+	   }
+}

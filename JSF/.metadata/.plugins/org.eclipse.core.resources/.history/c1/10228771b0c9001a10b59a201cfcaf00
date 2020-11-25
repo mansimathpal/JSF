@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+</h:head>
+<h:body>
+<h2>Select one of the following product category:</h2>
+<hr />
+<hr />
+<h:form>
+<a class="dropdown-item" href="#">Kids Clothing </a>
+<br />
+<a class="dropdown-item" href="#">Men Clothing </a>
+<br />
+<a class="dropdown-item" href="#">Women Clothing </a>
+<br />
+<a class="dropdown-item" href="#">Accessories </a>
+<a class="dropdown-item" href="#">Footwear </a>
+<a class="dropdown-item" href="#">Miscellaneous </a>
+<hr />
+<hr />
+<h2>Select one or more brands:</h2>
+<hr />
+<hr />
+           <h:selectManyCheckbox id="brands" value="#{brands}">
+	<center><f:selectItem itemLabel="Adidas" itemValue="Adidas" />
+			<f:selectItem itemLabel="Nike" itemValue="Nike" />
+			<f:selectItem itemLabel="Reebok" itemValue="Reebok" /></center>
+			</h:selectManyCheckbox>
+</h:form>
+</h:body>
+</html>

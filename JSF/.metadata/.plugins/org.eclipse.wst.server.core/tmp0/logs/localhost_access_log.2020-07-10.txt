@@ -1,0 +1,9 @@
+127.0.0.1 - - [10/Jul/2020:16:59:44 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [10/Jul/2020:16:59:50 +0530] "GET /exercise1OfChapter-2/faces/Registration.xhtml HTTP/1.1" 200 5974
+0:0:0:0:0:0:0:1 - - [10/Jul/2020:16:59:52 +0530] "GET /exercise1OfChapter-2/books/book.jpg;jsessionid=DACA48DCCFF47B59D52004998EFF1034 HTTP/1.1" 200 7341
+0:0:0:0:0:0:0:1 - - [10/Jul/2020:16:59:52 +0530] "GET /exercise1OfChapter-2/faces/javax.faces.resource/jsf.js?ln=javax.faces HTTP/1.1" 200 41707
+0:0:0:0:0:0:0:1 - - [10/Jul/2020:17:00:26 +0530] "POST /exercise1OfChapter-2/faces/Registration.xhtml;jsessionid=DACA48DCCFF47B59D52004998EFF1034 HTTP/1.1" 500 4088
+0:0:0:0:0:0:0:1 - - [10/Jul/2020:17:01:52 +0530] "POST /exercise1OfChapter-2/faces/Registration.xhtml;jsessionid=DACA48DCCFF47B59D52004998EFF1034 HTTP/1.1" 200 5801
+0:0:0:0:0:0:0:1 - - [10/Jul/2020:17:01:52 +0530] "GET /exercise1OfChapter-2/books/book.jpg HTTP/1.1" 200 7341
+0:0:0:0:0:0:0:1 - - [10/Jul/2020:17:04:25 +0530] "GET /exercise1OfChapter-2/faces/Success.xhtml HTTP/1.1" 200 1292
+0:0:0:0:0:0:0:1 - - [10/Jul/2020:17:04:30 +0530] "POST /exercise1OfChapter-2/faces/Success.xhtml HTTP/1.1" 200 5798

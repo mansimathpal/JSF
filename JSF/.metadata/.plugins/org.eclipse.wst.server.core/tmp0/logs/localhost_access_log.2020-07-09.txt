@@ -1,0 +1,2 @@
+127.0.0.1 - - [09/Jul/2020:14:34:13 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [09/Jul/2020:14:34:55 +0530] "GET /grantuniversity/faces/Registration.xhtml HTTP/1.1" 500 5677

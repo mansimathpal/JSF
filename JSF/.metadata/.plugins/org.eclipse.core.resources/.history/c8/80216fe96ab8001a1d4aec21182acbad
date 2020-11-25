@@ -1,0 +1,32 @@
+package com.learning.hibernate.driver;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.learning.hibernate.config.HibernateUtil;
+import com.learning.hibernate.model.Passport;
+
+
+public class PassportDriver {
+
+	public static void main(String[] args) {
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		// Create Passport class Object
+		Passport passport = new Passport("PANKR1234J", "Ghaziabad Authority");
+		
+		session.save(passport);
+		
+		
+		
+		
+		tx.commit();
+		session.close();
+		
+
+		
+	}
+
+}

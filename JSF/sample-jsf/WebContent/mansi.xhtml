@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+</h:head>
+<h:body>
+
+	<center><h2>Registration Form</h2></center>
+	<h:form>
+   Name: <h:inputText id="username" value="#{username}" />
+		<br />
+		<br />
+        
+  Password: <h:inputSecret id="password" value="#{password}" />
+		<br />
+		<br />
+		
+  Email:<h:inputText id="email" value="#{email}" />
+       <br />
+       <br />
+       
+  Phone:<h:inputText id="phone" value="#{phone}" />
+       <br />
+       <br />
+       
+   Address:<h:inputTextarea id="name" cols="20" rows="5" />
+         <br />
+         <br />
+       
+		Gender
+		<h:selectOneRadio id="gender" value="#{gender}">
+		 <f:selectItem itemLabel="Male" itemValue="Male" />
+		 <f:selectItem itemLabel="Female" itemValue="Female" />
+		</h:selectOneRadio>
+		<br />
+		<br />
+          
+          
+  Country:<h:selectOneMenu id="country" value="#{country}">
+
+			<f:selectItem itemLabel="India" itemValue="India" />
+			<f:selectItem itemLabel="Canada" itemValue="Canada" />
+			<f:selectItem itemLabel="Lucknow" itemValue="Lucknow" />
+			<f:selectItem itemLabel="NepaL" itemValue="Nepal" />
+			<f:selectItem itemLabel="Germany" itemValue="Germany" />
+			<f:selectItem itemLabel="Indonesia" itemValue="Indonesia" />
+		</h:selectOneMenu>
+		<br />
+		<br />
+		
+	Technical Languages:
+	<h:selectManyCheckbox id="language" value="#{languages}">
+	<f:selectItem itemLabel="C" itemValue="C" />
+	<f:selectItem itemLabel="Java" itemValue="Java" />
+	<f:selectItem itemLabel="Android" itemValue="Android" />
+	<f:selectItem itemLabel="Python" itemValue="Python" />
+	<f:selectItem itemLabel="SQL" itemValue="SQL" />
+	<f:selectItem itemLabel="HTML" itemValue="HTML" />
+	<f:selectItem itemLabel="C++" itemValue="C++" />
+	</h:selectManyCheckbox>
+	<br />
+	<br />
+	
+	Course:<h:selectOneMenu id="course" value="#{course}">
+	   <f:selectItem itemLabel="GNIIT" itemValue="GNIIT" />
+	   <f:selectItem itemLabel="Banking and Finance" itemValue="Banking and Finance" />
+	   <f:selectItem itemLabel="PGP JAVA" itemValue="PGP JAVA" />
+	   <f:selectItem itemLabel="New Career Series" itemValue="New Carrer Series" />
+	</h:selectOneMenu>
+	<br />
+	<br />
+   
+		<h:commandButton value="Register" action="wel" />
+	</h:form>
+
+</h:body>
+
+</html>

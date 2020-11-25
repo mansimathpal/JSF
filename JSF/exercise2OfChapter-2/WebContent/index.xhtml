@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+</h:head>
+<h:body>
+
+	<center><h2>Welcome to Book Store</h2></center>
+	<h:form>
+   Book ID: <h:inputText id="bookID" value="#{bookID}" required="true" />
+   <h:message for="bookID" style="color: red"/>  
+        <br />
+		<br />
+   Book Name: <h:inputText id="bookname" value="#{bookname}" required="true" />
+   <h:message for="bookname" style="color:red"></h:message>
+        <br />
+		<br />
+   Author: <h:inputText id="author" value="#{author}" required="true" />
+   <h:message for="author" style="color:red"></h:message>
+        <br />
+        <br />
+   Edition: <h:inputText id="edition" value="#{edition}" required="true" />
+   <h:message for="edition" style="color:red"></h:message> 
+        <br />
+        <br />
+   Type: <h:selectOneMenu id="type" value="#{type}">
+
+			<f:selectItem itemLabel="Technical" itemValue="Technical" />
+			<f:selectItem itemLabel="Novel" itemValue="Novel" />
+			<f:selectItem itemLabel="History" itemValue="History" />
+			<f:selectItem itemLabel="Science" itemValue="Science" />
+	    </h:selectOneMenu>
+		<br />
+		<br />
+	Publisher: <h:inputText id="publisher" value="#{publisher}" required="true" />
+	<h:message for="publisher" style="color:red"></h:message>
+	    <br />
+	    <br />
+	Publishing Year: <h:inputText id="publishingyear" value="#{publishingyear}" required="true" />
+	<h:message for="publishingyear" style="color:red"></h:message>
+	    <br />
+	    <br />
+	Price: <h:inputText id="price" value="#{price}" required="true" />
+	<h:message for="price" style="color:red"></h:message>
+	    <br />
+	    <br />
+	Quantity: <h:inputText id="quantity" value="#{quantity}" required="true" />
+	<h:message for="quantity" style="color:red"></h:message>
+	    <br />
+	    <br />
+			<h:commandButton value="Submit" action="book" />
+			<br />
+			<br />
+			<h:commandButton value="Reset" />
+	</h:form>
+
+</h:body>
+
+</html>

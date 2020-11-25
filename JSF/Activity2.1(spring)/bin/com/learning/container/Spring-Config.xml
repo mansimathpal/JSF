@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="customerbean" class="com.learning.Customer">
+    <property name="firstName" value="John"></property>
+    <property name="middleName" value="K"></property>
+    <property name="lastName" value="Philip"></property>
+    <property name="dateofBirth" value="13"></property>
+    <property name="yearofBirth" value="1975"></property>
+    <property name="motherName" value="kathy Philip"></property>
+    <property name="emailId" value="John.Philip@hotmail.com"></property>
+    <property name="gender" value="Male"></property>
+    <property name="maritalStatus" value="Single"></property>
+    <property name="houseNo" value="10 Park Street"></property>
+    <property name="streetName" value="10 Park Street"></property>
+    <property name="state" value="Florida"></property>
+    <property name="city" value="Miami"></property>
+    <property name="pincode" value="1A5012"></property>
+    <property name="phone" value="1234567890"></property>
+    <property name="userName" value="123565"></property>
+    <property name="password" value="134678"></property>
+    <property name="monthofBirth" value="09"></property>
+    </bean>
+
+    <bean id="accountbean" class="com.learning.Account">
+    <constructor-arg value="ICHD00010001"></constructor-arg>
+    <constructor-arg value="savings"></constructor-arg>
+    <constructor-arg value="23/08/2010"></constructor-arg>
+    <constructor-arg value="10000"></constructor-arg>
+    </bean>
+    
+    <bean id="fundtransferbean" class="com.learning.FundTransfer">
+    <constructor-arg value="10000"></constructor-arg>
+    </bean>
+</beans>

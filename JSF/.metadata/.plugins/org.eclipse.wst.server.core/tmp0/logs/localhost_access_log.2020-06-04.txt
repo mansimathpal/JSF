@@ -1,0 +1,9 @@
+127.0.0.1 - - [04/Jun/2020:17:10:27 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [04/Jun/2020:17:10:30 +0530] "GET /grantuniversity/faces/home.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [04/Jun/2020:17:11:02 +0530] "GET /grantuniversity/faces/home.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [04/Jun/2020:17:11:03 +0530] "GET /grantuniversity/faces/home.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [04/Jun/2020:17:11:30 +0530] "GET /grantuniversity/faces/home.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [04/Jun/2020:17:11:31 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [04/Jun/2020:17:24:48 +0530] "GET /grantuniversity/faces/home.xhtml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [04/Jun/2020:17:56:49 +0530] "GET /grantuniversity/faces/home.xhtml HTTP/1.1" 500 3603
+0:0:0:0:0:0:0:1 - - [04/Jun/2020:17:57:42 +0530] "GET /grantuniversity/faces/home.xhtml HTTP/1.1" 500 3603
